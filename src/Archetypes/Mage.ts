@@ -1,0 +1,1 @@
+import Archetype from "./Archetype";
