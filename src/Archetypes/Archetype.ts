@@ -1,3 +1,4 @@
+import { EnergyType } from '../Energy';
 // A classe Archetype deve ter os atributos privados: name, special, cost, que serão inicializados em seu construtor;
 export default abstract class Archetype {
   private _special: number;
@@ -24,4 +25,6 @@ export default abstract class Archetype {
   static createdArchetypeInstances(): number { // A classe Archetype deve ter um método estático chamado createdArchetypeInstances que retorna um number
     throw new Error('Not implemented');
   }
+
+  abstract get energyType(): EnergyType; // A classe Archetype deve ter um getter abstrato chamado energyType que retorna uma EnergyType
 }
